@@ -1,0 +1,9 @@
+version: '3'
+services:
+  rsa1:
+    image: taqini/bjd_rsa1
+    build: .
+    environment:
+      - FLAG=BJD{testflagaaaaaaaaaa}
+    ports: 
+     - "10006:9999"

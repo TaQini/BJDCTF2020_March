@@ -1,0 +1,7 @@
+version: '3'
+services:
+  one_gadget:
+    image: taqini/bjd_one_gadget
+    build: .
+#    ports: 
+#     - "10004:9999"

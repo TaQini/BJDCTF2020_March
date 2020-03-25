@@ -1,0 +1,16 @@
+version: '3'
+services:
+  test:
+    image: taqini/bjd_test
+    build: .
+#    ports: 
+#     - "10001:22"
+    volumes:
+     # override file below if need
+     - ./file/bin:/home/ctf
+     - ./file/config/motd:/etc/motd
+     - ./file/config/issue:/etc/issue
+     - ./file/config/legal:/etc/legal
+     - ./file/config/motd.dynamic:/var/run/motd.dynamic
+     - ./file/config/sshd_config:/etc/ssh/sshd_config
+

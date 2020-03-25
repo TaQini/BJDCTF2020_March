@@ -1,0 +1,7 @@
+version: '3'
+services:
+  r2t4:
+    image: taqini/bjd_r2t4
+    build: .
+    #ports: 
+    # - "10004:9999"
